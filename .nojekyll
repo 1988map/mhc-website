@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马泓宸 | AI Agent 开发者</title>
+    <meta http-equiv="refresh" content="0;url=/index.html">
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; background: #0f0f1a; color: #eaeaea;">
+        <div style="text-align: center;">
+            <p>正在跳转至网站...</p>
+            <p style="font-size: 0.9em; color: #8a8a9a;">如果没有自动跳转，<a href="/index.html" style="color: #e94560;">请点击这里</a></p>
+        </div>
+    </div>
+</body>
+</html>
