@@ -85,10 +85,9 @@
 
     .modal-header {
       padding: 30px 40px;
-      background: linear-gradient(135deg, rgba(233, 69, 96, 0.1), rgba(201, 162, 39, 0.05));
+      background: transparent;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      position: sticky;
-      top: 0;
+      position: relative;
       z-index: 10;
     }
 
@@ -166,6 +165,28 @@
 
     .modal-article-content strong {
       color: var(--text);
+    }
+
+    .modal-footer {
+      padding: 20px 40px 30px;
+      text-align: center;
+    }
+
+    .modal-close-bottom {
+      padding: 14px 40px;
+      background: rgba(233, 69, 96, 0.15);
+      border: 1px solid rgba(233, 69, 96, 0.3);
+      border-radius: 30px;
+      color: var(--accent-light);
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .modal-close-bottom:hover {
+      background: var(--accent);
+      color: white;
+      transform: translateY(-2px);
     }
 
     /* Scrollbar for modal */
@@ -1596,6 +1617,36 @@
         width: 100%;
         justify-content: center;
       }
+
+      .modal-header {
+        padding: 25px 20px;
+      }
+
+      .modal-body {
+        padding: 25px 20px;
+      }
+
+      .modal-title {
+        font-size: 1.4rem;
+        padding-right: 30px;
+      }
+
+      .modal-close {
+        top: 15px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        font-size: 1.3rem;
+      }
+
+      .modal-footer {
+        padding: 15px 20px 25px;
+      }
+
+      .modal-close-bottom {
+        width: 100%;
+        padding: 12px 30px;
+      }
     }
 
     @media (max-width: 480px) {
@@ -2264,6 +2315,9 @@
       </div>
       <div class="modal-body">
         <div class="modal-article-content" id="modalContent"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-close-bottom" onclick="closeArticle()">关闭文章</button>
       </div>
     </div>
   </div>
